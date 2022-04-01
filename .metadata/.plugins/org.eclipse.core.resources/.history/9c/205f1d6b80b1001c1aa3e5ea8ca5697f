@@ -1,0 +1,26 @@
+package list;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+
+public class linkedlist {
+	public static void main(String[] args) {
+		List<String> places =new LinkedList<String>();
+		places.add("mumbai");
+		places.add("amritsar");
+		places.add("bengal");
+		places.add("hyderabad");
+		places.add("shadnagar");
+		printlist(places);
+	}
+
+	private static void printlist(List<String> places) {
+		
+	for(Iterator<E> it=places.iterator();it.hasnext();) {
+		System.out.println(it.next());
+	}
+	}
+	
+
+}
